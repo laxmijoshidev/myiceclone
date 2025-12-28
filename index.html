@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frostella Ice Creams</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">🍨 Jas&May</div>
+
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About </a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+   <div class="nav-actions">
+    <button class="login-btn">Login</button>
+    <button class="signup-btn">Sign Up</button>
+
+    <div class="cart">
+      🛒
+      <span class="cart-badge">0</span>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <!-- Floating Ice Cream -->
+  <div class="hero-ice">
+    🍦
+    <div class="sparkles">
+      <span>✦</span>
+      <span>✦</span>
+      <span>✦</span>
+    </div>
+  </div>
+
+  <!-- Brand -->
+<div class="logo ice-logo">Jas&Mey</div>
+
+
+
+  <div class="hero-line"></div>
+
+  <!-- Text -->
+  <h2 class="hero-title">
+    Crafted with Love,<br />
+    Frozen with Care
+  </h2>
+
+  <p class="hero-desc">
+    Experience premium handcrafted ice cream made with
+    <strong>100% natural ingredients</strong>. Fresh daily.
+    50+ unique flavors. Free home delivery.
+  </p>
+
+  <!-- Buttons -->
+  <div class="hero-buttons">
+    <button class="btn primary">Order Now →</button>
+    <button class="btn secondary">Explore Flavors</button>
+  </div>
+
+  <!-- Stats -->
+  <div class="hero-stats">
+    <div class="stat">
+      <h3>100%</h3>
+      <p>Natural</p>
+    </div>
+    <div class="stat">
+      <h3>50+</h3>
+      <p>Flavors</p>
+    </div>
+    <div class="stat">
+      <h3>Free</h3>
+      <p>Delivery</p>
+    </div>
+    <div class="stat">
+      <h3>Fresh</h3>
+      <p>Daily</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- .. -->
+ 
+<section class="bestsellers">
+  <h2 class="section-title">Bestsellers</h2>
+  <p class="section-subtitle">
+    Our most-loved flavors crafted with premium ingredients
+  </p>
+
+  <div class="bestseller-wrapper">
+  <button class="scroll-btn left" onclick="scrollBestsellerManual(-1)">❮</button>
+
+
+
+    <div class="bestseller-row" id="bestsellerRow">
+
+      <!-- PRODUCT 1 -->
+      <div class="product-card">
+        <img src="images/stroyberry.png" alt="Strawberry Bliss">
+        <h3>Strawberry Bliss</h3>
+        <p class="desc">Real fruit chunks & creamy texture</p>
+        <span class="price">₹360</span>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="product-card">
+        <img src="images/pan.png" alt="Pistachio Paradise">
+        <h3>Pistachio Paradise</h3>
+        <p class="desc">California pistachios & saffron</p>
+        <span class="price">₹380</span>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="product-card">
+        <img src="images/choclate.png" alt="Belgian Chocolate">
+        <h3>Belgian Chocolate</h3>
+        <p class="desc">Dark chocolate brownie chunks</p>
+        <span class="price">₹333</span>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div class="product-card">
+        <img src="images/butter.png" alt="ButterSctoch">
+        <h3>ButterSctoch</h3>
+        <p class="desc">Alphonso mango richness</p>
+        <span class="price">₹299</span>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/stroyberry.png" alt="Strawberry Bliss">
+        <h3>Strawberry Bliss</h3>
+        <p class="desc">Real fruit chunks & creamy texture</p>
+        <span class="price">₹360</span>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="product-card">
+        <img src="images/vanilla.png" alt="Vanilla">
+        <h3>Pistachio Paradise</h3>
+        <p class="desc">California pistachios & saffron</p>
+        <span class="price">₹380</span>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="product-card">
+        <img src="images/choclate.png" alt="Belgian Chocolate">
+        <h3>Belgian Chocolate</h3>
+        <p class="desc">Dark chocolate brownie chunks</p>
+        <span class="price">₹333</span>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div class="product-card">
+        <img src="images/butter.png" alt="ButterSctoch">
+        <h3>ButterSctoch</h3>
+        <p class="desc">Alphonso mango richness</p>
+        <span class="price">₹299</span>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+
+      <!-- You can duplicate more cards -->
+    </div>
+
+
+<button class="scroll-btn right" onclick="scrollBestsellerManual(1)">❯</button>
+
+
+  </div>
+
+  <div class="view-all">
+    <a href="shop.html">View All Products →</a>
+  </div>
+</section>
+
+
+
+<!-- ================= why us ================= -->
+<section class="us">
+  <h2 class="section-title">Why Choose Jas&Mey?</h2>
+  <p class="section-subtitle">
+   We're committed to bringing you the finest ice cream experience
+  </p>
+
+</div>
+<div class="us-boxes">
+    <div class="us-box">
+        <h3>100% Natural</h3>
+        <p>Made with organic ingredients and no artificial flavors</p>
+    </div>
+
+    <div class="us-box">
+        <h3>Free Delivery</h3>
+        <p>Free home delivery on orders above ₹500</p>
+    </div>
+
+    <div class="us-box">
+        <h3>Fresh Daily</h3>
+        <p>Prepared fresh every day with the finest ingredients</p>
+    </div>
+
+    <div class="us-box">
+        <h3>50+ Flavors</h3>
+        <p>Wide variety of unique and exotic flavors to choose from</p>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- customers  -->
+
+<section class="testimonials-section">
+  <h2>What Our Customers Say</h2>
+  <p class="subtitle">
+    Join thousands of happy customers who love our ice cream
+  </p>
+
+  <div class="testimonial-wrapper">
+    <div class="testimonial-viewport">
+    <div class="testimonial-track">
+
+      <!-- CARD 1 -->
+      <div class="testimonial-card">
+         <div class="quote-icon">❞</div>
+        <div class="stars">★★★★★</div>
+        <h4>Authentic mango taste</h4>
+        <p>
+          Tastes like fresh Alphonso mangoes. Not too sweet, just perfect.
+          Will definitely order again!
+        </p>
+        <div class="user">
+          <span class="avatar">R</span>
+          <div>
+            <strong>Rahul Sharma</strong>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="testimonial-card">
+         <div class="quote-icon">❞</div>
+        <div class="stars">★★★★★</div>
+        <h4>Worth every penny</h4>
+        <p>
+          The pistachio flavor is so authentic and the saffron adds a royal touch.
+          Premium quality!
+        </p>
+        <div class="user">
+          <span class="avatar">P</span>
+          <div>
+            <strong>Priya Patel</strong>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="testimonial-card">
+         <div class="quote-icon">❞</div>
+        <div class="stars">★★★★☆</div>
+        <h4>Delicious brownie chunks</h4>
+        <p>
+          The brownie pieces are generous and gooey.
+          Chocolate flavor could be a bit stronger though.
+        </p>
+        <div class="user">
+          <span class="avatar">P</span>
+          <div>
+            <strong>Priya Patel</strong>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="testimonial-card">
+         <div class="quote-icon">❞</div>
+        <div class="stars">★★★★★</div>
+        <h4>Just like traditional kulfi!</h4>
+        <p>
+          Reminds me of kulfi from my childhood.
+          The cardamom and saffron balance is perfect.
+        </p>
+        <div class="user">
+          <span class="avatar">A</span>
+          <div>
+            <strong>Amit Kumar</strong>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="testimonial-card">
+         <div class="quote-icon">❞</div>
+        <div class="stars">★★★★★</div>
+        <h4>Perfect vanilla!</h4>
+        <p>
+          Clean vanilla flavor, not artificial at all.
+          The cone is crispy and fresh.
+        </p>
+        <div class="user">
+          <span class="avatar">S</span>
+          <div>
+            <strong>Sneha Reddy</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="testimonial-card">
+         <div class="quote-icon">❞</div>
+        <div class="stars">★★★★★</div>
+        <h4>Best chocolate ice cream ever!</h4>
+        <p>
+          Absolutely loved it! Belgian cocoa gives a rich flavor.
+          My kids finished the tub in one sitting.
+        </p>
+        <div class="user">
+          <span class="avatar">R</span>
+          <div>
+            <strong>Rahul Sharma</strong>
+            <span class="verified">✓ Verified Purchase</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DOTS -->
+  <div class="testimonial-dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</div>
+</section>
+
+<!-- ================= INSTAGRAM ================= -->
+
+<section class="instagram-section">
+  <h2 class="section-title">
+    <i class="fab fa-instagram"></i> Follow Us @JasMeyIceCream
+  </h2>
+  <p class="section-subtitle">
+    See our latest creations and customer favorites on Instagram
+  </p>
+
+  <div class="instagram-grid">
+
+    <a href="https://www.instagram.com/reel/1" target="_blank" class="insta-card">
+      <div class="emoji">🍦</div>
+      <div class="insta-overlay">
+        <div class="overlay-content">
+          <i class="fab fa-instagram"></i>
+          <h3>Vanilla Dream</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/reel/2" target="_blank" class="insta-card">
+      <div class="emoji">🍨</div>
+      <div class="insta-overlay">
+        <div class="overlay-content">
+          <i class="fab fa-instagram"></i>
+          <h3>Soft Scoop</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/reel/3" target="_blank" class="insta-card">
+      <div class="emoji">🧁</div>
+      <div class="insta-overlay">
+        <div class="overlay-content">
+          <i class="fab fa-instagram"></i>
+          <h3>Cupcake Love</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/reel/4" target="_blank" class="insta-card">
+      <div class="emoji">🍰</div>
+      <div class="insta-overlay">
+        <div class="overlay-content">
+          <i class="fab fa-instagram"></i>
+          <h3>Berry Cake</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/reel/5" target="_blank" class="insta-card">
+      <div class="emoji">🍪</div>
+      <div class="insta-overlay">
+        <div class="overlay-content">
+          <i class="fab fa-instagram"></i>
+          <h3>Choco Cookie</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/reel/6" target="_blank" class="insta-card">
+      <div class="emoji">🥤</div>
+      <div class="insta-overlay">
+        <div class="overlay-content">
+          <i class="fab fa-instagram"></i>
+          <h3>Cold Shake</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/reel/6" target="_blank" class="insta-card">
+      <div class="emoji">🍨</div>
+      <div class="insta-overlay">
+        <div class="overlay-content">
+          <i class="fab fa-instagram"></i>
+          <h3>Creamy ice</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/reel/6" target="_blank" class="insta-card">
+      <div class="emoji">🎂</div>
+      <div class="insta-overlay">
+        <div class="overlay-content">
+          <i class="fab fa-instagram"></i>
+          <h3>Cake</h3>
+        </div>
+      </div>
+    </a>
+
+  </div>
+  <div class="insta-follow-link">
+  <a href="https://www.instagram.com/JasMeyIceCream" target="_blank">
+      <i class="fab fa-instagram"></i>
+    <span class="insta-text">Follow us on Instagram</span>
+  </a>
+</div>
+
+</section>
+
+
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter-section">
+  <div class="newsletter-card">
+    <div class="icon-circle">
+      ✉️
+    </div>
+    <h2>Stay Updated with Our Latest Flavors</h2>
+    <p>
+      Subscribe to our newsletter and get exclusive offers, new flavor announcements, and
+      special discounts delivered to your inbox!
+    </p>
+
+ <form class="newsletter-form" id="newsletterForm">
+  <input
+    type="email"
+    id="newsletterEmail"
+    placeholder="Enter your email address"
+    required
+  />
+  <button type="submit">✈ Subscribe</button>
+</form>
+<div class="newsletter-success" id="newsletterSuccess">
+  <div class="success-icon">✅</div>
+  <h2>Thank You for Subscribing!</h2>
+  <p>
+    You'll receive our latest updates and exclusive offers soon.
+  </p>
+  <button id="subscribeAgainBtn">Subscribe Another Email</button>
+</div>
+
+
+    <div class="newsletter-features">
+      <div class="feature">
+        <div class="feature-icon">🎁</div>
+        <span>Exclusive Offers</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🍦</div>
+        <span>New Flavors</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💰</div>
+        <span>Special Discounts</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+       
+
+
+
+
+<!-- foot  -->
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-col brand">
+      <h2>Jas&May</h2>
+      <p>
+        Crafted with Love, Frozen with Care.<br />
+        Premium handcrafted ice cream made with 100% natural ingredients.
+      </p>
+
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/jasmey" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com" target="_blank" aria-label="X">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/terms" >Terms & Conditions</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="footer-col">
+      <h3>Customer Service</h3>
+      <ul>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/shipping">Shipping Information</a></li>
+        <li><a href="/returns">Returns & Refunds</a></li>
+        <li><a href="/track">Track Order</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>📍 123 Ice Cream Street, Mumbai,<br />Maharashtra 400001</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ hello@jasmey.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Jas&May Ice Cream. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shop | Jas&May</title>
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<section class="shop-container">
+
+  <!-- FILTER SIDEBAR -->
+  <aside class="filters">
+    <h3>Categories</h3>
+    <label><input type="checkbox"> Cups</label>
+    <label><input type="checkbox"> Cones</label>
+    <label><input type="checkbox"> Tubs</label>
+    <label><input type="checkbox"> Family Packs</label>
+    <label><input type="checkbox"> Sugar-Free</label>
+    <label><input type="checkbox"> Premium</label>
+
+    <h3>Price Range</h3>
+    <input type="range" min="0" max="1000">
+
+    <h3>Dietary</h3>
+    <label><input type="checkbox"> Vegetarian</label>
+    <label><input type="checkbox"> Sugar-Free</label>
+    <label><input type="checkbox"> Gluten-Free</label>
+
+    <button class="clear-btn">Clear All Filters</button>
+  </aside>
+
+  <div class="shop-page">
+  <input id="searchInput" placeholder="Search ice creams..." />
+
+  <select id="sortSelect">
+    <option value="">Sort by</option>
+    <option value="priceLow">Price: Low to High</option>
+    <option value="priceHigh">Price: High to Low</option>
+  </select>
+
+  <div id="productGrid" class="grid"></div>
+</div>
+
+
+
+<!-- QUICK VIEW MODAL -->
+<!-- <div class="modal" id="quickView">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="modalImg">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+    <p class="price" id="modalPrice"></p>
+  </div>
+</div> -->
+
+<script src="js/shop.js"></script>
+</body>
+</html>
